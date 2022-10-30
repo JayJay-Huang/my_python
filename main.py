@@ -1,12 +1,10 @@
-from selenium import webdriver
-import time
-webdriver_path = 'data/webdriver/chromedriver.exe'
-web_path = 'http://www.google.com'
-driver = webdriver.Chrome(webdriver_path)
-driver.get(web_path)
+import cv2
+img = cv2.imread("./data/img.jpg", 0)
+t1, thd = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
+t2, otsu = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+cv2.imshow('img', img)
+cv2.imshow('thd', thd)
+cv2.imshow('otsu', otsu)
 
-# e1 = driver.find_element_by_class_name('gLFyf')
-e1 = driver.find_element_by_xpath("//div[@class='gLFyf']")
-e1.send_keys('Selenium Python666')
-
-time.sleep(3)
+cv2.waitKey()
+cv2.destroyAllWindows()

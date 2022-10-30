@@ -4,6 +4,7 @@
     <list default="true" id="dcf8ed4f-40c1-4b34-986a-c455eff19b86" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doc/selenium.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/selenium.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/產生灰階影像.md" beforeDir="false" afterPath="$PROJECT_DIR$/doc/openCV.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,5 +78,16 @@
       <updated>1667024418741</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
