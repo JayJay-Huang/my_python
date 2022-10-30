@@ -1,7 +1,12 @@
-import sys
-from os.path import dirname, abspath
+from selenium import webdriver
+import time
+webdriver_path = 'data/webdriver/chromedriver.exe'
+web_path = 'http://www.google.com'
+driver = webdriver.Chrome(webdriver_path)
+driver.get(web_path)
 
-proj_path = dirname(abspath(__file__))  # 取絕對路徑 # 取上級目錄
-sys.path.append(proj_path + '')  # 切換目錄
+# e1 = driver.find_element_by_class_name('gLFyf')
+e1 = driver.find_element_by_xpath("//div[@class='gLFyf']")
+e1.send_keys('Selenium Python666')
 
-# from ... import ...
+time.sleep(3)

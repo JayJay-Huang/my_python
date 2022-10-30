@@ -12,8 +12,19 @@ https://chromedriver.chromium.org/downloads
 ```py
 from selenium import webdriver
 import time
-
-driver = webdriver.Chrome('data/webdriver/chromedriver.exe')
-driver.get("https://www.baidu.com/")
+webdriver_path = 'data/webdriver/chromedriver.exe'
+web_path = 'http://www.google.com'
+driver = webdriver.Chrome(webdriver_path)
+driver.get(web_path)
 time.sleep(3)
+```
+## 定位
+```py
+el = driver.find_element_by_id()
+el = driver.find_element_by_tag_name()
+el = driver.find_element_by_class_name()
+el = driver.find_element_by_link_text()
+el = driver.find_element_by_partial_link_text()
+el = driver.find_element_by_xpath()
+el = driver.find_element_by_css_selector()
 ```
