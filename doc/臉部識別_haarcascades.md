@@ -1,3 +1,6 @@
+##
+
+```py
 import cv2
 
 face_cascade = cv2.CascadeClassifier('./haarcascades/haarcascade_frontalface_default.xml')
@@ -20,7 +23,7 @@ def detect(filename):
         for (ex, ey, ew, eh) in eyes:
             img = cv2.rectangle(img, (x + ex, y + ey), (x + ex + ew, y + ey + eh), (0, 255, 0), 2)
 
-    cv2.imwrite('data/img/hero_3.jpg', img)
+    cv2.imwrite('data/hero_3.jpg', img)
 
-
-detect('data/img/hero.jpg')
+detect('./data/hero.jpg')
+```
